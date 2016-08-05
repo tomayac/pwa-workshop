@@ -43,11 +43,21 @@ contains a simple bash script called ```send-notification.sh``` that you need to
 [API key](https://developers.google.com/web/fundamentals/getting-started/push-notifications/step-04?hl=en).
 Likewise, in the ```manifest.json```, you need to  change the ```"gcm_sender_id"``` for the one
 from your [project](https://developers.google.com/web/fundamentals/getting-started/push-notifications/step-05?hl=en)
-that you have created earlier. 
+that you have created earlier.
 Finally, adapt the [subscription ID](https://developers.google.com/web/fundamentals/getting-started/push-notifications/step-07?hl=en)
 in the bash script ```send-notification.sh``` for the one that the app logs to the console when you run it for the first time.
 - **Step 3:** This step introduces the [add to homescreen](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android) functionality.
 You can simulate it on the desktop by opening the Chrome Developer Tools, navigating to the Application tab, and then on the Manifest section, clicking on the "Add to homescreen" link.
+
+## 😯 Demo
+
+You can see each step in action thanks to the magic of [GitHub Pages](https://help.github.com/articles/creating-project-pages-manually/)
+by navigating to one of the links below:
+
+- **Step 0:** [static app](https://tomayac.github.io/pwa-workshop/step-0-static-app/)
+- **Step 1:** [app shell](https://tomayac.github.io/pwa-workshop/step-1-app-shell/)
+- **Step 2:** [push notification](https://tomayac.github.io/pwa-workshop/step-2-push-notification/)
+- **Step 3:** [add to homescreen](https://tomayac.github.io/pwa-workshop/step-3-add-to-homescreen/)
 
 ## 📄 License
 
