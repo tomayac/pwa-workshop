@@ -1,0 +1,25 @@
+{
+  "name": "pwa-workshop",
+  "version": "1.0.0",
+  "description": "Exemplary Progressive Web App (PWA) that showcases PWA features like offline support, push notifications, and add to homescreen.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-google": "^0.6.0"
+  },
+  "eslintConfig": {
+    "extends": "google",
+    "env": {
+      "browser": true,
+      "worker": true
+    },
+    "array-callback-return": "warning"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "Thomas Steiner <steiner.thomas@gmail.com> (http://blog.tomayac.com/)",
+  "license": "Apache-2.0"
+}
