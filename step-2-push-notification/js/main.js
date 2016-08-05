@@ -13,7 +13,7 @@
   // Register Service Worker and sign up for push notifications
   (() => {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
+      navigator.serviceWorker.register('./service-worker.js')
       .then(serviceWorkerRegistration => {
         console.log('[Main] Service Worker registered');
         serviceWorkerRegistration.pushManager.subscribe({

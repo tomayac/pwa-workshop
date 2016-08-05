@@ -13,7 +13,7 @@
   // Register Service Worker
   (() => {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
+      navigator.serviceWorker.register('./service-worker.js')
       .then(serviceWorkerRegistration => {
         console.log('[Main] Service Worker registered');
         console.log(serviceWorkerRegistration);
