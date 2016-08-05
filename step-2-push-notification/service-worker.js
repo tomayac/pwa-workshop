@@ -1,12 +1,12 @@
 const staticCacheName = 'pwa-workshop-static-v1';
 const staticFilesToCache = [
-  '/',
-  '/index.html',
-  '/static/logo.svg',
-  '/static/loupe.svg',
-  '/static/yellow.gif',
-  '/styles/main.css',
-  '/js/main.js'
+  './',
+  './index.html',
+  './static/logo.svg',
+  './static/loupe.svg',
+  './static/yellow.gif',
+  './styles/main.css',
+  './js/main.js'
 ];
 const dynamicCacheName = 'pwa-workshop-dynamic-v1';
 
@@ -66,7 +66,7 @@ self.addEventListener('fetch', e => {
     }).catch(err => {
       if (/.*?\/static\//.test(requestUrl)) {
         console.log('[ServiceWorker] Returning fallback for ', requestUrl, err);
-        return caches.match('/static/yellow.gif');
+        return caches.match('./static/yellow.gif');
       }
     })
   );
@@ -78,7 +78,7 @@ self.addEventListener('push', e => {
   e.waitUntil(
     self.registration.showNotification(title, {
       body: 'Push notification received' + Math.random(),
-      icon: 'static/logo.png',
+      icon: './static/logo.png',
       tag: 'my-tag' + Math.random()
     })
   );
