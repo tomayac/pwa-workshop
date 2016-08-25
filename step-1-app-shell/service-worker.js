@@ -12,7 +12,7 @@ const dynamicCacheName = 'pwa-workshop-dynamic-v1';
 
 self.addEventListener('install', e => {
   console.log('[ServiceWorker] Installed Service Worker');
-  console.log(e);
+  // console.log(e);
   e.waitUntil(
     caches.open(staticCacheName).then(cache => {
       console.log('[ServiceWorker] Caching app shell in', staticCacheName);

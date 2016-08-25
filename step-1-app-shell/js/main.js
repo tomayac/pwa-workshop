@@ -18,7 +18,6 @@
       navigator.serviceWorker.register('./service-worker.js')
       .then(serviceWorkerRegistration => {
         console.log('[Main] Service Worker registered');
-        console.log(serviceWorkerRegistration);
       }).catch(err => {
         console.log('[Main]', err);
       });
