@@ -1,7 +1,9 @@
 (() => {
   // Simulate slow image loading
   (() => {
-    for (let img of document.querySelectorAll('img.offer-img')) {
+    const offerImgs = document.querySelectorAll('img.offer-img');
+    for (let i = 0, lenI = offerImgs.length; i < lenI; i++) {
+      let img = offerImgs[i];
       img.style.backgroundImage = `url(${img.dataset.src})`;
       setTimeout(() => {
         img.classList.remove('offer-img--blur');
