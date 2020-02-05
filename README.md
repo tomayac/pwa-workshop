@@ -1,4 +1,7 @@
 # 📱 Progressive Web App (PWA) Technology Workshop
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/tomayac/pwa-workshop.svg)](https://greenkeeper.io/)
+
 ## 🛅 An Exemplary Travel App
 
 An exemplary Progressive Web App ([PWA](https://developers.google.com/web/progressive-web-apps/))
